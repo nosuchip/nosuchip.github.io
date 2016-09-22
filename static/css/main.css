@@ -122,30 +122,37 @@ a:after {
 }
 
 
-#section-topbar ul#nav a {
+#section-topbar ul#nav a,
+#section-topbar ul#nav a:focus {
   display: block;
   font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   padding: 18px 20px 18px 20px;
   border-left: 1px solid #222;
+  background-color: transparent;
 }
 
-    #section-topbar ul#nav a:hover {
-      background: #222;
-      text-decoration: none;
-      border-left: 1px solid #111;
-    }
+#section-topbar ul#nav a:hover {
+  background: #222;
+  text-decoration: none;
+  border-left: 1px solid #111;
+}
 
-    #section-topbar ul#nav .active a {
-        background: #44bbaa;
-        border-left: 1px solid #111;
-    }
+#section-topbar ul#nav .active a {
+    background: #44bbaa;
+    border-left: 1px solid #111;
+}
 
-        #section-topbar ul#nav .active a:hover {
-            background: #44bbaa;
-        }
+#section-topbar ul#nav .active a:hover {
+    background: #44bbaa;
+}
+
 #section-topbar i {
     font-size: 25px;
+}
+
+#section-topbar ul#nav a .menu-item-text {
+    display: block;
 }
 /*---------------------------------------------------
     SECTION WRAPS
